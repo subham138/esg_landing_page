@@ -661,4 +661,8 @@ footer a {
     .logo-icon{
         width: 250px !important;
     }
+
+    #home .container{
+        padding-top: 25px;
+    }
 }
