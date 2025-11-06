@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Development-friendly CSP: allows local scripts ('self') and https sources.
+        Remove or tighten in production (prefer nonces/hashes instead of 'unsafe-inline'). -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com;">
+    <title>ESG Risk Viewer</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6B6686QW4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T6B6686QW4');
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-floating" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/images/ESG-Risk-Viewer-logo.png" alt="ESG" width="338" height="60"
+                    class="me-2 rounded logo-icon">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMain"
+                aria-controls="navbarsMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsMain">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="fr.html" class="btn btn-outline-light btn-sm">FR</a>
+                    <a class="btn btn-md btn-gradient text-white"
+                        href="https://platform.esgriskviewer.com/login">Customer Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO with parallax background -->
+    <header class="hero-section position-relative overflow-hidden" id="home">
+        <div class="parallax-layer">
+            <video autoplay muted loop playsinline class="background-video" poster="assets/images/placeholder.png">
+                <source src="assets/images/ESG-Risk-Viewer.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container py-6">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-5 fw-bold">Your Trusted Partner</h1>
+                    <p class="fs-3"><mark style="background: #ffffff!important">The most comprehensive sustainability
+                            platform.</mark></p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://platform.esgriskviewer.com/register" class="btn btn-lg btn-gradient">Start for
+                            free</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <img src="assets/images/GHG-Report.png" class="img-fluid rounded shadow slide-img-1"
+                                alt="Screenshot 1">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/Operational_Boundaries_Setting_Tool.png"
+                                class="img-fluid rounded shadow slide-img-2" alt="Screenshot 2">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/GHG_Emissions_Dashboard.png"
+                                class="img-fluid rounded shadow slide-img-3" alt="Screenshot 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Four features -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Key Features</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="feature-card p-4 rounded shadow-sm">
+                        <img src="assets/images/get-started-quickly.png" alt="">
+                        <h5 class="fw-bold">Get started quickly</h5>
+                        <p class="lead">A platform with pre-built tools to help you start your sustainability journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card p-4 rounded shadow-sm">
+                        <img src="assets/images/completely-free.png" alt="">
+                        <h5 class="fw-bold">Completely free</h5>
+                        <p class="lead">Our comprehensive carbon emissions module is completely free.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card p-4 rounded shadow-sm">
+                        <img src="assets/images/includes-all-sectors.png" alt="">
+                        <h5 class="fw-bold">Includes all sectors</h5>
+                        <p class="lead">Consumer goods, industrial, infrastructure, services, transportation and many
+                            more.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card p-4 rounded shadow-sm">
+                        <img src="assets/images/from-data-to-audit.png" alt="">
+                        <h5 class="fw-bold">From data to audit</h5>
+                        <p class="lead">Supports the entire carbon accounting process, from data collection to auditing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video & points -->
+    <section class="py-5 bg-light" id="insights">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-7">
+                    <div class="sticky-video">
+                        <div class="animated-image">
+                            <img src="assets/images/Operational_Boundaries_Setting_Tool.png"
+                                alt="Operational Boundaries Setting Tool" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="points-list">
+                        <div class="point mb-4">
+                            <div class="point-header">
+                                <img src="assets/images/ghg-operational-boundaries.png" alt="">
+                                <h5>GHG operational boundaries setting tool</h5>
+                            </div>
+                            <p class="lead">In-built tools to define GHG operational boundaries and to calculate
+                                emissions in line with the GHG Protocol.</p>
+                        </div>
+                        <div class="point mb-4">
+                            <div class="point-header">
+                                <img src="assets/images/scope1-scope2-scope3.png" alt="">
+                                <h5>Scope 1, scope 3 and scope 3 categories</h5>
+                            </div>
+                            <p class="lead">Comprehensive GHG module that includes scope 1, scope 3 and scope 3
+                                categories. All 15 activities within scope 3 included.</p>
+                        </div>
+                        <div class="point mb-4">
+                            <div class="point-header">
+                                <img src="assets/images/emission-factors.png" alt="">
+                                <h5>More than 2,000 emission factors</h5>
+                            </div>
+                            <p class="lead">5:1 ratio between activity-based and spend-based emission factors.</p>
+                        </div>
+                        <div class="point mb-4">
+                            <div class="point-header">
+                                <img src="assets/images/net-zero-transition.png" alt="">
+                                <h5>Net-zero transition plan building and monitoring</h5>
+                            </div>
+                            <p class="lead">Set long-term goals and short-term milestones, develop action plans and
+                                track their progress via an intuitive dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs section -->
+    <section class="py-5 bg-white" id="modules">
+        <div class="container">
+            <ul class="nav nav-tabs mb-4" id="moduleTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="carbon-tab" data-bs-toggle="tab" data-bs-target="#carbon"
+                        type="button" role="tab">Carbon Module</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sustain-tab" data-bs-toggle="tab" data-bs-target="#sustain"
+                        type="button" role="tab">Sustainability Module</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="moduleTabsContent">
+                <div class="tab-pane fade show active" id="carbon" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-tree-fill text-success me-2"></i>The Climate
+                                        Aware</h5>
+                                    <p class="lead">The Climate Aware organisations are conscious about climate change
+                                        and its implications. They adopt a practical approach in managing climate risks.
+                                        They typically aim to respond to greenhouse gases (GHG) emissions information
+                                        requests from clients and lenders.</p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="1">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-gear-fill text-warning me-2"></i>The Climate
+                                        Action-Ready</h5>
+                                    <p class="lead">The Climate Action-Ready organisations take a mid- to long-term view
+                                        of climate change and its implications. They typically adopt a strategic
+                                        approach to the management of GHG emissions and build capabilities to mitigate
+                                        risks and seized opportunities.</p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="2">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-trophy-fill text-danger me-2"></i>The
+                                        Net-Zero Contributor</h5>
+                                    <p class="lead">The Net-Zero Contributors take a long-term view of climate change
+                                        and its implications. They lead the way in their respective industry, drive
+                                        innovation in the management of GHG emissions, build and help build capabilities
+                                        to mitigate risks and seized opportunities.</p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="3">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="sustain" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-balance-scale text-info me-2"></i>The
+                                        Pragmatist</h5>
+                                    <p class="lead">The sustainability pragmatists use a practical and context-sensitive
+                                        approach to managing sustainability risks and opportunities. They typically aim
+                                        to respond to information requests from clients, lenders and other stakeholders.
+                                    </p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="4">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-lightbulb-fill text-warning me-2"></i>The
+                                        Strategist</h5>
+                                    <p class="lead">The sustainability strategists take a long-term view of
+                                        sustainability risks and opportunities affecting the organisation. They
+                                        typically anticipate new developments and build capabilities to mitigate risks
+                                        and to seized opportunities.</p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="5">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="bi bi-rocket-fill text-primary me-2"></i>The
+                                        Trailblazer</h5>
+                                    <p class="lead">The sustainability trailblazers lead the way in sustainability in
+                                        their respective industry. They take a long-term view of sustainability risks
+                                        and opportunities, and drive innovation while addressing demands from
+                                        stakeholders.</p>
+                                    <button type="button" class="btn btn-sm btn-primary service-modal-btn"
+                                        data-id="6">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO with parallax background -->
+    <header class="hero-section position-relative overflow-hidden" id="home">
+        <div class="parallax-layer">
+            <video autoplay muted loop playsinline class="background-video" poster="assets/images/placeholder.png">
+                <source src="assets/images/intuitive-dashboard.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container py-6">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-5 fw-bold fst-italic">An Intuitive Dashboard</h1>
+                    <p class="fs-3"><mark style="background: #ffffff!important">Monitor your progress and set actionable
+                            targets.</mark></p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://platform.esgriskviewer.com/register" class="btn btn-outline-light btn-lg">Start
+                            for free</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mb-4 mt-lg-0">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <img src="assets/images/GHG_Emissions_Dashboard.png"
+                                class="img-fluid rounded shadow slide-img-1" alt="Screenshot 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="py-5 bg-light pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Choose Your Plan</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card pricing-free fade-in">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title mt-4"><i class="bi bi-seedling-fill text-success me-2"></i>Starter
+                            </h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">Free</span>
+                                <span class="price-period">Forever</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="icofont icofont-check-circled me-2"></i>1 authorised user</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Up to 2 GHG emissions projects
+                                </li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>GHG Operational boundaries setting
+                                    tool</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Extensive database of emission
+                                    factors</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Unlimited reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card pricing-popular fade-in">
+                        <div class="pricing-badge mt-4">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-title mt-4"><i class="bi bi-star-fill text-warning me-2"></i>Lite</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">£59.00</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li><i class="icofont icofont-check-circled me-2"></i>2 authorised users</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Up to 5 GHG emissions and
+                                    sustainability projects</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>GHG Operational boundaries setting
+                                    tool</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Extensive database of emission
+                                    factors</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Scope 1, 2 and 3 GHG emissions
+                                    calculation tool</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Intuitive dashboard for monitoring
+                                    carbon footprint</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Selection of one reporting
+                                    framework (e.g VSME)</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>In-built materiality assessment
+                                    tool</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Guided sustainability reporting
+                                </li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>In-built UN SDGs mapping tool</li>
+                                <li><i class="icofont icofont-check-circled me-2"></i>Unlimited reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card pricing-premium fade-in">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title mt-4"><i class="bi bi-gem text-primary me-2"></i>Premium</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount">£89.00</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <p class="pricing-description">All features included in Lite version, plus</p>
+                            <ul class="pricing-features">
+                                <ul class="pricing-features">
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Up to 10 GHG emissions and
+                                        sustainability projects</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Net-zero transition plan
+                                        building and monitoring tool</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Integrated action plan form
+                                        for each emission source</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Selection of multiple
+                                        reporting frameworks (e.g. ESRS)</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>AI-powered search of 100+
+                                        reports from peers in your industry</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Interoperability data points
+                                        mapping across multiple sustainability frameworks</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>XBRL tagging-ready and
+                                        auditable reports</li>
+                                    <li><i class="icofont icofont-check-circled me-2"></i>Decarbonisation strategy
+                                        benchmarking tool</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card pricing-free fade-in">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title mt-4"><i
+                                    class="bi bi-building-fill text-secondary me-2"></i>Enterprise</h3>
+                            <p class="pricing-description fs-6">Suitable for organisations such as large corporates,
+                                banks and consultants wishing to manage all its supply chain partners within a unified
+                                platform</p>
+                            <div class="pricing-price">
+                            </div>
+                        </div>
+                        <div class="pricing-body">
+                            <a href="mailto:info@esgriskviewer.com"><button
+                                    class="btn btn-pricing btn-premium w-100">Contact Us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA short text -->
+    <section class="py-5 bg-light text-center" id="start">
+        <div class="container">
+            <a href="https://platform.esgriskviewer.com/register"><button class="btn btn-pricing btn-premium w-25">Sign
+                    up</button></a>
+        </div>
+    </section>
+
+
+    <!-- Newsletter / News -->
+    <section class="py-5" id="news">
+        <div class="container">
+
+            <h2 class="text-center mb-5 fw-bold">Read our Latest Insights</h2>
+            <div class="owl-carousel owl-theme g-4">
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Reporting on Financed Emissions and Data Quality</h5>
+                            <p class="card-text">Financed emissions represent the GHG emissions associated with the
+                                lending and investment activities of financial institutions. We illustrate the
+                                implications of financed emissions reporting for organisations.</p>
+                            <a href="assets/files/Financed-Emissions.pdf" target="_blank"
+                                class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Is your Business at an Upstream or Downstream Control Point?</h5>
+                            <p class="card-text">This article explains the reason why even SMEs should engage with the
+                                management and reporting of their sustainability risk and opportunities.</p>
+                            <a href="assets/files/Sustainalility-Reporting-for-SMEs.pdf" target="_blank"
+                                class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainability and Value Creation</h5>
+                            <p class="card-text">This article highlights the benefits of sustainability for SMEs and
+                                explain the steps involved in the voluntary adoption of sustainability reporting
+                                frameworks.</p>
+                            <a href="assets/files/Sustainalility-and-Value-Creation.pdf" target="_blank"
+                                class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Getting Started with GHG Emissions</h5>
+                            <p class="card-text">In this article, we highlight the process of managing GHG emissions for
+                                organisations, from the determination of organisational boundaries to the establishment
+                                of transition plans.</p>
+                            <a href="assets/files/Getting-Started-with-GHG-Emissions.pdf" target="_blank"
+                                class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">CFO vs CSO – Prioritising Competing Stakeholders Claims</h5>
+                            <p class="card-text">We highlight the benefits of using Multilateral Stakeholder Salience as
+                                a model to align sustainability actions with the degree of salience (i.e. power,
+                                legitimacy and urgency) of various stakeholder groups.</p>
+                            <a href="assets/files/CFO-CSO-Prioritising-Competing-Stakeholders-Claims.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card w-100 h-100">
+                        <img src="assets/images/Newsletter.png" class="card-img-top" alt="News 3">
+                        <div class="card-body">
+                            <h5 class="card-title">UK Sustainability Reporting Standards</h5>
+                            <p class="card-text">This article reviews the content elements of the strategic report for
+                                companies and the work of the Technical Advisory Committee (TAC) to assess IFRS
+                                Sustainability Disclosure Standards on a technical basis.</p>
+                            <a href="assets/files/UK-Sustainability-Reporting-Standards-and-Strategic-Reports.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-primary custom-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 modalHeader" id="serviceModalLabel">The Climate Aware</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="serviceModalContent">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 text-white" style="background: #202a44;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/esg-risk-viewer-white-favicon-small.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h6>Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="assets/files/Terms-of-Use.pdf" class="text-white">Terms of Use</a></li>
+                        <li><a href="assets/files/Privacy-Policy.pdf" class="text-white">Privacy Policy</a></li>
+                        <li><a href="assets/files/Cookies-Policy.pdf" class="text-white">Cookies Policy</a></li>
+                        <li><a href="mailto:info@esgriskviewer.com" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Our Offices</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-white">London</a></li>
+                        <li><a href="" class="text-white">Paris</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.linkedin.com/company/esg-risk-viewer/?viewAsMember=true"
+                        class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="text-left mt-4 small">© <span id="year"></span> ESG Risk Viewer</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        // show current year
+        document.addEventListener('DOMContentLoaded', () => { document.getElementById('year').textContent = new Date().getFullYear(); });
+
+        // simple parallax for hero
+        (function () {
+            const layer = document.querySelector('.parallax-layer');
+            if (!layer) return;
+            let ticking = false;
+            let mouseX = 0, mouseY = 0;
+            function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const y = window.scrollY;
+                        const translateY = y * 0.25;
+                        const rotateX = (mouseY / window.innerHeight - 0.5) * 5;
+                        const rotateY = (mouseX / window.innerWidth - 0.5) * 5;
+
+                        layer.style.transform = `
+                            translateY(${translateY}px)
+                            rotateX(${rotateX}deg)
+                            rotateY(${rotateY}deg)
+                            scale(1.1)
+                        `;
+                        let heroPositionTop = $('.parallax-layer').position().top
+                        let backPersentage = $('.parallax-layer').position().top < 0 ? 0 : ($('.parallax-layer').position().top > 100 ? 100 : $('.parallax-layer').position().top);
+                        $('.navbar-floating').css('background', `rgb(48 65 87 / ${backPersentage}%)`)
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+
+            function onMouseMove(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                onScroll();
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('mousemove', onMouseMove, { passive: true });
+            onScroll();
+        })();
+
+        // make video sticky in its column using CSS fallback; nothing required in JS
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                autoplayHoverPause: true,
+                center: true,
+                items: 4,
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: ["<span class='owl-nav-prev'>&lt;</span>", "<span class='owl-nav-next'>&gt;</span>"],
+                dots: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 4 }
+                }
+            });
+        });
+    </script>
+    <script>
+        $('.service-modal-btn').on('click', function () {
+            const id = $(this).data('id')
+            let header, sub_header1, sub_header2, sub_header3, content1, content2, content3;
+            switch (id) {
+                case 1:
+                    header = 'The Climate Aware';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    break;
+                case 2:
+                    header = 'The Climate Action-Ready';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    break;
+                case 3:
+                    header = 'The Net-Zero Contributor';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    break;
+                case 4:
+                    header = 'The Pragmatist';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    sub_header3 = 'Sustainability strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    content3 = 'ESG Risk Viewer includes an in-built materiality assessment and the ability to select from various sustainability reporting frameworks. It also features an integrated UN SDGs mapping tool, an AI-powered search function and an XBRL tagging capability with interoperability data points mapping to facilitate reporting across multiple frameworks.'
+                    break;
+                case 5:
+                    header = 'The Strategist';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    sub_header3 = 'Sustainability strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    content3 = 'ESG Risk Viewer includes an in-built materiality assessment and the ability to select from various sustainability reporting frameworks. It also features an integrated UN SDGs mapping tool, an AI-powered search function and an XBRL tagging capability with interoperability data points mapping to facilitate reporting across multiple frameworks.'
+                    break;
+                case 6:
+                    header = 'The Trailblazer';
+                    sub_header1 = 'Carbon assessment';
+                    sub_header2 = 'Climate strategy';
+                    sub_header3 = 'Sustainability strategy';
+                    content1 = 'Use our comprehensive tool to set operational boundaries, covering Scope 1, Scope 2 and Scope 3 emissions across all 15 categories. It includes both activity-based and spend-based data. Visualise your results via a dashboard that allows for the monitoring and reduction of carbon footprint.'
+                    content2 = 'ESG Risk Viewer includes graphing tools for greenhouse gas (GHG) emissions. You will also have access our literature on best practices for decarbonisation.'
+                    content3 = 'ESG Risk Viewer includes an in-built materiality assessment and the ability to select from various sustainability reporting frameworks. It also features an integrated UN SDGs mapping tool, an AI-powered search function and an XBRL tagging capability with interoperability data points mapping to facilitate reporting across multiple frameworks.'
+                    break;
+            }
+
+            const contentText = `
+                <h5 class="modal-sub-header" id="sub-header1">${sub_header1}</h5>
+                <p class="modal-content-cust" id="content1">${content1}</p>
+                <h5 class="modal-sub-header" id="sub-header2">${sub_header2}</h5>
+                <p class="modal-content-cust" id="content2">${content2}</p>
+                ${sub_header3 != '' && sub_header3 ? `<h5 class="modal-sub-header" id="sub-header2">${sub_header3}</h5>` : ''}
+                ${content3 != '' && content3 ? `<p class="modal-content-cust" id="content2">${content3}</p>` : ''}
+            `
+            $('#serviceModalContent').empty().append(contentText)
+            $('#serviceModalLabel').text(header)
+            $('#serviceModal').modal('show')
+        })
+    </script>
+</body>
+
+</html>
